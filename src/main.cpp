@@ -19,7 +19,7 @@ int main() {
 }
 
 /**
- * Usefull function
+ * Useful function
  */
 void init_spi() {
 
