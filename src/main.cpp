@@ -33,7 +33,7 @@ void init_spi() {
 void init_pwm() {
 
     DDRB |= (1 << PB1);                         // set D9 (OC1A) to output
-    TCCR1A = TCCR1B = 0;                        // reset timer 1
+    TCCR1A = TCCR1B = OCR1A = 0;                        // reset timer 1
 
     /* mode: fast PWM 10 bit */
     TCCR1A |= (1 << WGM10) | (1 << WGM11);
